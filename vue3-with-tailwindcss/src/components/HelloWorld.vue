@@ -32,12 +32,15 @@
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
+  <Tailwind />
 </template>
 
 <script lang="ts">
+import Tailwind from './Tailwind.vue'
 import { ref, defineComponent } from 'vue'
 export default defineComponent({
   name: 'HelloWorld',
+  components: { Tailwind },
   props: {
     msg: {
       type: String,
